@@ -1,0 +1,37 @@
+.meet-our-crew{
+	background-color: $bg-color;
+	text-align: center;
+	padding: 160px 0 165px;
+}
+.instructor-wrap{
+	display: flex;
+	// justify-content: space-between;
+	margin: 63px -20px 0;
+	flex-wrap: wrap;
+}
+.instructor-block{
+	margin: 0 20px 50px;
+	.instructor{
+		margin: 32px 0 15px;
+	}
+	img{
+		max-width: 240px;
+		max-height: 240px;
+	}
+}
+@media screen and (max-width: 838px) {
+	.instructor-block{
+		width: calc(50% - 40px);
+	}
+}
+@media screen and (max-width: 768px) {
+	.meet-our-crew{
+		padding: 70px 0 75px;
+	}
+}
+@media screen and (max-width: 614px) {
+	.instructor-block{
+		width: calc(100% - 40px);
+		margin: 0 auto 50px;
+	}
+}

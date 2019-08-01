@@ -1,0 +1,135 @@
+.footer{
+}
+.grid{
+	display:grid;
+	grid-template-columns: 639px 2fr;
+	grid-auto-rows: minmax(639px , auto);
+}
+.contact-us{
+	background-color: #333333;
+	padding: 100px 0 100px 120px;
+	width: 100%;
+	.title{
+		color:#fff;
+		margin-bottom: 32px;
+	}
+	p{
+		margin-bottom: 30px;
+		color: #f7f7f7;
+		font-family: Muli;
+		font-size: 18px;
+		font-weight: 300;
+		padding-left: 32px;
+		line-height: 26px;
+		text-transform: uppercase;
+		width: 297px;
+		position: relative;
+		&:before{
+			display: block;
+			content: '';
+			position: absolute;
+			top: 5px;
+			left: 0;
+		}
+	}
+	.tel{
+		&:before{
+			width: 16px;
+			height: 16px;
+			background-image: url(../img/icons/tel.png);
+			background-repeat: no-repeat;
+		}
+		
+
+	}
+	.local{
+		&:before{
+			width: 12px;
+			height: 18px;
+			background-image: url(../img/icons/local.png);
+			background-repeat: no-repeat;
+		}
+		
+
+	}
+	.mail{
+		&:before{
+			width: 18px;
+			height: 14px;
+			background-image: url(../img/icons/letter.png);
+			background-repeat: no-repeat;
+		}
+		
+
+	}
+	.clock{
+		&:before{
+			width: 18px;
+			height: 18px;
+			background-image: url(../img/icons/clock.png);
+			background-repeat: no-repeat;
+		}
+		
+
+	}
+}
+.map{
+
+}
+
+
+.social{
+	display: flex;
+	align-items: center;
+	margin-top: 73px - 30px;
+	li{
+		margin-right: 36px;
+		&:last-child{
+			margin-right: 0;
+		}
+		a{
+			&:before{
+				display: block;
+				content: '';
+			}
+		}
+		.tw{
+			&:before{
+				width: 30px;
+				height: 24px;
+				background-image: url(../img/icons/twitter-brands.svg);
+				background-repeat: no-repeat;
+			}
+			
+		}
+		.fb{
+			&:before{
+				width: 16px;
+				height: 30px;
+				background-image: url(../img/icons/facebook-f-brands.svg);
+				background-repeat: no-repeat;
+			}
+			
+		}
+		.inst{
+			&:before{
+				width: 27px;
+				height: 27px;
+				background-image: url(../img/icons/instagram-brands.svg);
+				background-repeat: no-repeat;
+			}
+			
+		}
+	}
+}
+@media screen and (max-width:1200px){
+	.grid{
+		grid-template-columns: 1fr;
+	}
+
+}
+@media screen and (max-width: 768px) {
+	.contact-us{
+		padding: 50px 0 50px 20px;
+	}
+}

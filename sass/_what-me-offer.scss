@@ -1,0 +1,61 @@
+.what-me-offer {
+  background-color: $bg-color;
+  padding: 92px 0 160px;
+}
+.offer-wrap {
+  max-width: 1075px;
+  margin: 0 auto;
+  text-align: center;
+}
+.text {
+  p {
+    color: #565656;
+    font-family: Muli;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    max-width: 930px;
+    margin: 0 auto;
+  }
+}
+.lessons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 73px -20px 0;
+  max-width: 1085px;
+  flex-wrap: wrap;
+}
+.lesson-card {
+  width: 273px - 20px;
+  margin: 0 20px 50px;
+  img {
+    max-width: 237px;
+    max-height: 186px;
+  }
+  .btn {
+    padding: 18px 23px;
+    font-size: 15px;
+    max-width: 122px;
+    margin: 31px auto 0 auto;
+    @include btn;
+  }
+}
+@media screen and (max-width: 878px) {
+  .lesson-card {
+    width: 350px - 20px;
+
+    margin: 0 auto 50px;
+  }
+  @media screen and (max-width: 768px) {
+    .what-me-offer {
+			padding: 92px 0 70px;
+		}
+  }
+}
+@media screen and (max-width: 660px) {
+  .lesson-card {
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+}
